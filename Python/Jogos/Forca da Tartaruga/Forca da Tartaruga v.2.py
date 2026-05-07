@@ -1,6 +1,5 @@
 # Forca da Tartaruga v.2 (pygame ao invés de turtle)
 #import gemini
-#KEY = AIzaSyDPBZk79SxAg-oTzdVueCbtqsvz0tn5OWY 
 import pygame
 pygame.init()
 
