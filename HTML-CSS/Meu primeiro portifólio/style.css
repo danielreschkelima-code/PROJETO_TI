@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+body {
+    background-color: #f5edff;
+    margin: 4;
+    font-family: Arial, sans-serif;
+}
+
+
+/*MENU DE NAVEGAÇÃO*/
+nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin-top: 0px;
+    margin: 10px;
+    padding: 0;
+    background-color: #03ad91; /* Cor de fundo escura */
+    overflow: hidden; /* Garante que os elementos flutuantes sejam contidos */
+    border-radius: 15px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block; /* Ocupa todo o espaço do 'li' */
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+nav ul li a:hover {
+    font-size: 60px;
+    letter-spacing: 2px;
+    background-color: #55008d; /* Escurece o fundo ao passar o mouse */
+    transition: 1s;
+    border-radius: 15px;
+    color: #03ad91;
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: white; /* cor da borda */
+}
+
+/* Esconde o botão em telas grandes */
+.menu-hamburguer {
+    display: none;
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 12em;
+    margin: 20px;
+    font-family: "Kablammo", system-ui;
+    color: #55008d;
+}
+
+.Euzinho {
+    display: flex;  /* Coloca os elementos lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Euzinho img {
+    max-width: 18%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 100px;
+    display: block;
+    margin-right: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Euzinho:hover {
+    background: #55008d;
+    border-radius: 20px;
+    letter-spacing: 10px;
+    margin: 10px;
+    transition: 1s;
+}
+
+.Euzinho:hover h1 {
+    color: #03ad91;
+    font-size:  13.5em;
+    transition: 1s;
+}
+
+.Euzinho:hover img {
+    max-width: 25%;
+    transition: 1s;
+    margin-right: 20px;
+}
+
+hr {
+    border: none;
+    background-color: #03ad91;
+    border-radius: 50px;
+    height: 50px;
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-right: 500px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "DM Sans", sans-serif;
+    color: #03ad91;
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+p {
+    font-family: "DM Sans", sans-serif;
+    color: gray;
+    font-size: 35px;
+    text-align: center;
+    margin: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.Sobre:hover h2, .Projetos:hover h2, .Hobbies:hover h2, .Contato:hover h2 {
+    transition: 1s;
+    background-color: #55008d;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #03ad91;
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-decoration: underline wavy #ffffff 6px;
+    border-radius: 50px;
+}
+
+.Sobre:hover p, .Projetos:hover p, .Hobbies:hover p, .Contato:hover p {
+    font-size: 37px;
+    margin: 25px;
+    transition: 1s;
+}
+
+
+.cartões{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cardPANC, .cardImuno {
+    flex: 1 1 50%;
+    flex-shrink: 1;
+    border: 18px solid #03ad91;
+    border-radius: 70px;
+    margin: 5%;
+    transition: all 1s ease-in-out;
+}
+
+.cardPANC:hover {
+    margin-top: 150px;
+    margin-bottom: 150px; 
+    border: 28px solid #55008d;
+    box-shadow: 8px 8px 0px 4px #55008d9d;
+    transform: scale(1.15);
+    transition: 1s;
+}
+
+.cardImuno:hover {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border: 28px solid #55008d;
+    box-shadow: -8px -8px 0px 4px #55008d9d;
+    transform: scale(1.15);
+    transition: 1s;
+}
+
+h3 {
+    font-family: "DM Sans", sans-serif;
+    color: gray;
+    font-size: 40px;
+    padding: 10px;
+    text-decoration: underline wavy #55008d 4px;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardPANC:hover h3{
+    color: #37005c;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-decoration: underline dotted #03ad91 10px;
+    transition: 1s;
+}
+
+.cardImuno:hover h3{
+    color: #37005c;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-decoration: underline dotted #03ad91 10px;
+    transition: 1s;
+}
+
+.galeria {
+    columns: 300px;
+    margin: 0.5em;
+    column-gap: 0.5em;
+}
+
+.galeria img {
+    width: 100%;
+    margin-bottom: 0.5em;
+    border-radius: 20px;
+}
+
+address{
+    font-family: "DM Sans", sans-serif;
+    color: gray;
+    font-size: 44px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#data{
+    font-family: "DM Sans", sans-serif;
+    color: rgba(128, 128, 128, 0.76);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+    margin: 40px;
+}
+
+/* Estilos para o menu em telas pequenas (media query) */
+@media screen and (max-width: 600px) {
+
+    nav ul.menu-links {
+        display: none; /* Esconde a lista de links por padrão */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.menu-links.ativo {
+        display: flex; /* Mostra a lista quando a classe 'ativo' é adicionada */
+    }
+
+    .menu-hamburguer {
+        display: block; /* Mostra o botão em telas pequenas */
+        background-color: #03ad91;
+        color: white;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border-radius: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    .Euzinho {
+        margin: auto;
+        margin-top: 10px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Euzinho h1 {
+        margin-top: 20px;
+        font-size: 6em;
+    }
+
+    .Euzinho img{
+        align-items: center;
+        max-width: 60%; /* Garante que a imagem não ultrapasse o contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+
+    }
+
+    .Euzinho:hover h1 {
+        color: #03ad91;
+        font-size:  7em;
+        transition: 1s;
+    }
+    
+    .Euzinho:hover img{
+        max-width: 65%;
+        transition: 1s;
+    }
+
+    h2{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .Sobre:hover h2, .Projetos:hover h2, .Hobbies:hover h2, .Contato:hover h2 {
+        background-color: #55008d;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #03ad91;
+        font-size: 55px;
+        letter-spacing: 2px;
+        text-decoration: underline wavy #ffffff 6px;
+        border-radius: 50px;
+        transition: 1s;
+    }
+
+    .cartões{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Portal de Links do Aluno</title> <!-- Texto que aparece na aba do navegador --> 
+    </head>
+
+    <body>
+        <h1>Hiperlinks</h1>
+        <hr>
+
+        <h2>Menu de navegação</h2>
+        <ul>
+            <!--É redundante ter o atalho para o menu de navegação por conta do usuário já estar no menu de navegação-->
+            <li><a href="#Parágrafos com links">Parágrafos com links;</a></li>
+            <li><a href="#Links de E-mail">Links de E-mail;</a></li>
+            <li><a href="#Links de download">Links de download;</a></li>
+            <li><a href="#Link com imagem">Link com imagem;</a></li>
+            <li><a href="#Link para fragmento no mesmo documento">Link para fragmento no mesmo documento.</a></li>
+        </ul>
+
+        <h2 id="Parágrafos com links">Parágrafos com links</h2>
+        <p> A atmosfera terrestra é composta principalmente por nitrogênio (N<sub>2</sub>) e oxigênio (O<sub>2</sub>), além de outros com menores quantidades. Desses rarefeitos, o gás carobônico (CO<sub>2</sub>) faz parte e atualmente, <a title="Página da web dos estudos" href="https://projetocolabora.com.br/ods13/concentracao-de-co2-se-aproxima-de-valores-registrados-ha-14-milhoes-de-anos/" target="_blank">segundo estudos realizados</a>, tem níveis próximos a 420 <abbr title="partes por milhão">ppm</abbr>, no entanto seu nível ideal deveria ser próximo a 350 <abbr title="partes por milhão">ppm</abbr>.</p> <!-- _blank é página vazia no navegador e target indica que o link deve ir para ela-->
+        <p> <a title="Página da reportagem sobre" href="https://g1.globo.com/sp/ribeirao-preto-franca/noticia/2023/11/13/vulcao-no-brasil-qual-relacao-entre-erupcoes-de-131-milhoes-de-anos-atras-e-a-terra-roxa-da-agricultura-no-pais.ghtml" target="_blank">Reportagem</a> afirma que vulcão entra em atividade no Brasil, o que é completamente inesperado e assusta a população do local.</p>
+        
+        <h2 id="Links de E-mail">Links de E-mail</h2>
+        <p> <a href="mailto:contato@meusite.com?subject=Assunto%20Teste&body=Corpo%20Teste">Envie e-mail.</a></p>
+
+        <h2 id="Links de download">Links de download</h2>
+        <p><a href="https://www.aprsentação-chata.pdf" download="apresentação-chata.pdf">Faça o download do arquvio PDF(5MB) de uma apresentação chata.</a></p>
+
+        <h2 id="Link com imagem">Link com imagem</h2>
+        <p>Veja a imagem do meu curso técnico:</p>
+        <a href="https://ifrs.edu.br/restinga/"> <img src="C:\Users\estudante\Documents\Tec-Informatica.jpg" alt="Imagem da logo do curso técnico de informática."> </a> <!-- alt é para o recurso de acessibiladade -->
+
+        <h2 id="Link para fragmento no mesmo documento">Link para fragmento no mesmo documento</h2>
+        <ul>
+            <li> <a href="#Sobre">Sobre;</a></li>
+            <li> <a href="#Projetos">Projetos;</a></li>
+            <li> <a href="#Contato">Contato.</a></li>
+        </ul>
+
+        <h3 id="Sobre">Sobre</h3>
+            <p>Sobre o autor.</p>
+        <h3 id="Projetos">Projetos</h3>
+            <p>Projetos do autor.</p>
+        <h3 id="Contato">Contato</h3>
+            <p>Formas de contato do autor.</p>
