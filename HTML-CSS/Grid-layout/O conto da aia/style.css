@@ -57,6 +57,7 @@ img {
 }
 
 #textodolado {
+    background-color:rgb(201, 38, 38);
     grid-area: 4/3 / 5/4;
 }
 
