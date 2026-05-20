@@ -3,6 +3,7 @@
 * {
     font-family: "DM Sans", sans-serif;
     margin: 0px;
+    box-sizing: border-box;
     transition: 0.3s;
 }
 
@@ -32,13 +33,17 @@ header {
 }
 
 #menu>ul {
-    align-self: center;
+    padding: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
     text-align: center;
+    border: 2px solid white;
 }
 
 #menu>ul:hover {
     background-color: white;
     color:rgb(201, 38, 38);
+    transform: scale(1.1);
 }
 
 #imagem {

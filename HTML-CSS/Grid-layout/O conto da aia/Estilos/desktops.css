@@ -10,7 +10,18 @@ header {
 #menu {
     display: flex;
     justify-content: flex-start;
+    align-items: stretch;
     grid-area: 2/1  / 3/3;
+}
+
+#menu>ul {
+    padding: 0px;
+    text-align: right;
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
 }
 
 #imagem {
