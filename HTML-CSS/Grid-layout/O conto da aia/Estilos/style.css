@@ -32,6 +32,7 @@ header {
 }
 
 #menu>ul {
+    align-self: center;
     text-align: center;
 }
 
@@ -47,7 +48,7 @@ header {
 }
 
 #imagem>img {
-    height: 30vh;
+    height: 40vh;
     border-radius: 10%;
 }
 
@@ -77,6 +78,10 @@ article>p {
     text-align: center;
     font-size: 40px;
     color: white;
+}
+
+#textodolado>p {
+    font-size: 15px;
 }
 
 footer {
