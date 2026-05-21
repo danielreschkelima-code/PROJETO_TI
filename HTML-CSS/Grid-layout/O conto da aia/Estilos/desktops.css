@@ -1,6 +1,6 @@
 .container {    
-    grid-template-rows: 75px 40px 300px 300px 75px;
-    grid-template-columns: 10fr 1fr; 
+    grid-template-rows: 75px 40px 300px 300px 150px;
+    grid-template-columns: 80wv 20vw; 
 }
 
 header {
@@ -9,31 +9,43 @@ header {
 
 #menu {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: stretch;
     grid-area: 2/1  / 3/3;
 }
 
 #menu>ul {
-    padding: 0px;
-    text-align: right;
-    padding-top: auto;
-    padding-bottom: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 5px;
+    padding: 10px;
+    flex: 0;
+    flex-basis: 180px;
 }
+
 
 #imagem {
     grid-area: 3/2 /4/3;
 }
 
-article{
+#imagem>img {
+    height: 270px;
+}
+
+article {
     grid-area: 3/1 / 5/2;
 }
 
+article>h2 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
 #textodolado {
+    place-self: center center;
     max-width: 300px;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
     text-align: right;
     background-color:rgb(201, 38, 38);
     grid-area: 4/2 / 5/3;
@@ -46,4 +58,10 @@ article{
 footer {
     text-align: center;
     grid-area: 5/1 / 6/3;
+}
+
+#textopequeno {
+    margin-left: 200px;
+    margin-right: 200px;
+
 }
