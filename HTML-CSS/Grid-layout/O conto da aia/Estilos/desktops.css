@@ -1,6 +1,6 @@
 .container {    
-    grid-template-rows: 75px 40px 300px 300px 150px;
-    grid-template-columns: 80wv 20vw; 
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 4fr 1fr; 
 }
 
 header {
@@ -32,6 +32,7 @@ header {
 
 article {
     grid-area: 3/1 / 5/2;
+    padding-bottom: 10px;
 }
 
 article>h2 {
@@ -43,9 +44,11 @@ article>h2 {
     place-self: center center;
     max-width: 300px;
     height: 250px;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
+    padding-bottom: 20px;
     text-align: right;
     background-color:rgb(201, 38, 38);
     grid-area: 4/2 / 5/3;
@@ -56,6 +59,7 @@ article>h2 {
 }
 
 footer {
+    padding-bottom: 30px;
     text-align: center;
     grid-area: 5/1 / 6/3;
 }

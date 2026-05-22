@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(0, 0, 0, 0.884);
+}
+
+.container {
+    grid-template-rows: auto auto auto 1fr auto;
+    background-color: white;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header {
+    font-size: 25px;
+}
+
+#menu>ul {
+    font-size: 18px;
+}
+
+article>h2 {
+    font-size: 40px;
+}
+
+article>p {
+    font-size: 22px;
+}
+
+#textodolado {
+    place-self: start center;
+    margin-top: 30px;
+}
+
+footer {
+    font-size: 18px;
+}
+
+#textopequeno {
+    font-size: 16px;
+}
