@@ -21,6 +21,15 @@ header {
     flex-basis: 180px;
 }
 
+#hamburger {
+    display: none;
+}
+
+.menuitens {
+    display: inline;
+    max-height: none;   /* Cancela a limitação de altura no computador */
+    opacity: 1;         /* Garante que esteja 100% visível */
+}
 
 #imagem {
     grid-area: 3/2 /4/3;

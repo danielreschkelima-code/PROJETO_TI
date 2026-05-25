@@ -19,6 +19,9 @@ body{
 }
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     font-size: 20px;
     background-color: rgb(179, 34, 34);
     color: white;
@@ -37,8 +40,24 @@ header {
 
 #menu>ul {
     text-align: center;
-    padding: 5px;
     flex: 1;
+}
+
+.menuitens {
+    padding: 0px;       /* Zera o padding para não ocupar espaço guardado */
+    max-height: 0;      /* Força a altura a ficar em 0 */
+    overflow: hidden;   /* Corta e esconde o texto que sair do espaço zerado */
+    opacity: 0;         /* Torna o texto invisível */
+}
+
+.menuitens.active {
+    max-height: 50px;   /* Dá uma altura limite para o item expandir suavemente */
+    opacity: 1;         /* Torna o texto visível */
+    padding: 10px 5px;  /* Devolve o preenchimento interno */
+}
+
+#hamburger {
+    padding: 10px 5px;
 }
 
 #menu>ul:hover {
