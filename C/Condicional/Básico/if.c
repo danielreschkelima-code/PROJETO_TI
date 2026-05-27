@@ -11,6 +11,5 @@ int main() {
     if(c >= "a") {
         printf("Segue a letra que você digitou em maiuscula > %c <", toupper(c));
     }
-
     return 0;
 }
