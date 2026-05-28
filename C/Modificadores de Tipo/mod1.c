@@ -4,10 +4,10 @@
 int main() {
     /*
         1) char - carcter
-        2) int 
-        3) float
-        4) double
-        5) void
+        2) int - num inteiro
+        3) float - decimais simples
+        4) double - decimais grandes
+        5) void - vazio
 
         1) signed -  + e -
         2) unsigned - +
@@ -17,5 +17,9 @@ int main() {
 
     unsigned short int i;
     double u;
-    printf("\n%i -> variavel i\n", i); // printa em bytes
+
+    printf("\n%i -> variavel i\n", sizeof(i)); // printa em bytes
+    printf("\n%i -> variavel i\n", sizeof(u));
+
+    return 0;
 }
