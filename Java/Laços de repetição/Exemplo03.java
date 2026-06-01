@@ -8,8 +8,7 @@ public class Exemplo03 {
 			System.out.print(i + " ");
 		}
 		
-		System.out.print("FIM");
-		
+		System.out.print("FIM");		
 	}
 
 }
