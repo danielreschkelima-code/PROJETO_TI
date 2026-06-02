@@ -1,0 +1,13 @@
+{
+  "name": "projeto-classe-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scr/services/app.js",
+  "scripts": {
+    "start": "node src/services/app.js"
+  },
+  "keywords": [],
+"author": "Daniel Reschke de Lima",     
+  "license": "ISC",
+  "type": "module"
+}
