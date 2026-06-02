@@ -21,8 +21,8 @@ public class Exemplopessoa {
 		
 		p2.imprimir();
 		
-		p1.falar("Não.");
-		p2.falar("Essa geração de hoje em dia... Perdidos!");
+		p1.falar("Nï¿½o.");
+		p2.falar("Essa geraï¿½ï¿½o de hoje em dia... Perdidos!");
 		
 		p1.aniversariar();
 		
