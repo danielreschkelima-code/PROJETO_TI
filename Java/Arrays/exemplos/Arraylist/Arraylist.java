@@ -13,6 +13,8 @@ public class Arraylist {
         System.out.println();
         System.out.println(users.get(9).GetNomeCompleto());
         System.out.println(users.get(8).GetNomeCompleto());
+        System.out.println(users.get(8).toString()); // sobreescrevendo o método toString().
+        System.out.println(User.getContagemUsuarios()); // vendo quantos usuários existem com static.
         System.out.println();
     }
 }
