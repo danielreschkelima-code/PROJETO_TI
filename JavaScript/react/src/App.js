@@ -5,6 +5,8 @@ import Pessoa from './components/Pessoa';
 import Frase from './components/Frase.js';
 import List from './components/List.js';
 import Item from './components/Item.js';
+import Evento from './components/Evento.js';
+import Form from './components/Form.js';
 
 
 function App() {
@@ -53,6 +55,13 @@ function App() {
       <section id="FRAGMENTOS">
         <h1>FRAGMENTOS</h1>
           <List />
+      </section>
+
+      <section id="EVENTOS">
+        <h1>EVENTOS</h1>
+          <Evento numero="1"/>
+          <Evento numero="2"/>
+          <Form/>
       </section>
 
     </div>
