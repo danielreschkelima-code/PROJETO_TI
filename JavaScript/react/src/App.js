@@ -7,6 +7,8 @@ import List from './components/List.js';
 import Item from './components/Item.js';
 import Evento from './components/Evento.js';
 import Form from './components/Form.js';
+import Condicional from './components/Condicional.js';
+import OutraLista from './components/OutraLista.js';
 
 
 function App() {
@@ -17,6 +19,9 @@ function App() {
   }
 
   let url = "https://via.placeholder.com/150"
+
+  const lista = ["React", "Vue", "Angular"];
+  const listaVazia = [];
 
   return ( //aqui começa o JSX
     
@@ -62,6 +67,17 @@ function App() {
           <Evento numero="1"/>
           <Evento numero="2"/>
           <Form/>
+      </section>
+
+      <section id="RENDERICACAO CONDICIONAL">
+        <h1>RENDERICAÇÃO CONDICIONAL</h1>
+          <Condicional />
+      </section>
+
+      <section id="RENDERICACAO DE LISTAS">
+        <h1>RENDERICAÇÃO DE LISTAS</h1>
+          <OutraLista itens={lista}/>
+          <OutraLista itens={listaVazia}/>
       </section>
 
     </div>
