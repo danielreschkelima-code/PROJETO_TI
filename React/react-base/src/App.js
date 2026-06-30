@@ -9,19 +9,31 @@ import Evento from './components/Evento.js';
 import Form from './components/Form.js';
 import Condicional from './components/Condicional.js';
 import OutraLista from './components/OutraLista.js';
-
+import SeuNome from './components/SeuNome.js';
+import { useState } from 'react';
+import Saudacao from './components/Saudacao.js';
+import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import Home from './pages/Home.js';
+import Contato from './pages/Contato.js';
+import Empresa from './pages/Empresa.js';
+import NavBar from './components/layout/NavBar.js';
+import Footer from './components/layout/Footer.js';
 
 function App() {
 
+  // ALTERANDO JSX
   let name = "Brandon"
   function sum(a, b) {
     return a + b
   }
-
   let url = "https://via.placeholder.com/150"
 
+  // RENDERIZAÇÃO DE LISTAS
   const lista = ["React", "Vue", "Angular"];
   const listaVazia = [];
+
+  //STATE LIFT
+  const [nome, setNome] = useState();
 
   return ( //aqui começa o JSX
     
@@ -78,6 +90,26 @@ function App() {
         <h1>RENDERICAÇÃO DE LISTAS</h1>
           <OutraLista itens={lista}/>
           <OutraLista itens={listaVazia}/>
+      </section>
+
+      <section id="STATE LIFT">
+        <h1>STATE LIFT</h1>
+          <SeuNome setNome={setNome}/>
+          <p>{nome}</p>
+          <Saudacao nome={nome}/>
+      </section>
+
+      <section id="ROUTER">
+        <Router>
+          <h1>ROUTER</h1>
+            <NavBar />
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/empresa" element={<Empresa/>} />
+              <Route path="/contato" element={<Contato/>} />
+            </Routes>
+            <Footer />
+        </Router>
       </section>
 
     </div>
