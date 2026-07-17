@@ -2,7 +2,8 @@ import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import Message from "../layout/Message.js";
-import Container from '../layout/Container.js'
+import Container from '../layout/Container.js';
+import Loading from '../layout/Loading.js';
 import LinkButton from '../layout/LinkButton.js';
 import ProjectCard from '../project/ProjectCard.js';
 
@@ -11,6 +12,8 @@ import styles from './Projects.module.css'
 function Projects() {
 
     const [projects, setProjects] = useState([]);
+    const [removeLoading, setRemoveLoading] = useState(false);
+    const [projectMessage, setProjectMessage] = useState('');
 
     const location = useLocation();
 
@@ -30,9 +33,24 @@ function Projects() {
         .then((data) => {
             console.log(data);
             setProjects(data);
+            setRemoveLoading(true);
         })
         .catch((err) => console.log(err))
     }, []);
+
+    function removeProject(id) {
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application.json',
+            },
+        }).then((resp) => resp.json())
+        .then((data) => {
+            setProjects(projects.filter((project) => project.id !== id));
+            setProjectMessage(' XXX Projeto removido com sucesso XXX');
+        })
+        .catch((err) => console.log(err))
+    }
 
     return (
         <div className={styles.project_container}>
@@ -41,11 +59,16 @@ function Projects() {
                 <LinkButton to="/newproject" text="Criar Projeto" />
             </div>
             {message && <Message msg={message} type="success" />}
+            {projectMessage && <Message msg={projectMessage} type="success" />}
             <Container customCLass="start">
                 {projects.length > 0 &&
-                    projects.map((project) => (<ProjectCard name={project.name} id={project.id} budget={project.budget} category={project.category ? project.category.name : "Projeto sem categoria"} key={project.id} />
+                    projects.map((project) => (<ProjectCard name={project.name} id={project.id} budget={project.budget} category={project.category ? project.category.name : "Projeto sem categoria"} key={project.id} handleRemove={removeProject} />
                     ))
                 }
+                {!removeLoading && <Loading />}
+                {removeLoading && projects.length === 0 && (
+                    <p>Não há projetos cadastrados /:</p>
+                )}
             </Container>
         </div>
     );
