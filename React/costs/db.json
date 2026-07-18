@@ -23,15 +23,8 @@
       "id": "Na1_yOhm4uM"
     },
     {
-      "name": "teste",
-      "budget": "5000",
-      "cost": 0,
-      "servizes": [],
-      "id": "p0rA78zxaQE"
-    },
-    {
       "name": "Projeto 3",
-      "budget": "3",
+      "budget": "3333",
       "category": {
         "id": "3",
         "name": "Design"
