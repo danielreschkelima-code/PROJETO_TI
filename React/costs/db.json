@@ -7,19 +7,13 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 300,
+      "cost": 200,
       "services": [
         {
           "name": "S1",
           "cost": "200",
           "description": "O de 200",
           "id": "d4e69d18-ff08-4ee9-b1db-0d8796fe535f"
-        },
-        {
-          "name": "S2",
-          "cost": "100",
-          "description": "O de 100",
-          "id": "5aa227c9-05ef-45db-bc1a-1e0087c14bda"
         },
         {
           "cost": "0",
@@ -29,30 +23,6 @@
         }
       ],
       "id": "NgW-A-eNCSk"
-    },
-    {
-      "name": "teste1",
-      "budget": "1000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 66,
-      "services": [
-        {
-          "name": "teste3",
-          "cost": "33",
-          "description": "a",
-          "id": "152e401c-306c-445e-be3b-3c621bb9fa8a"
-        },
-        {
-          "name": "teste3",
-          "cost": "33",
-          "description": "a",
-          "id": "152e401c-306c-445e-be3b-3c621bb9fa8a"
-        }
-      ],
-      "id": "kZFUX_Efml4"
     }
   ],
   "categories": [
