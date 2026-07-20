@@ -12,7 +12,7 @@ function NewProject() {
 
         // initialize cost and services
         project.cost = 0;
-        project.servizes = [];
+        project.services = [];
 
         fetch("http://localhost:5000/projects", {
             method: 'POST',
