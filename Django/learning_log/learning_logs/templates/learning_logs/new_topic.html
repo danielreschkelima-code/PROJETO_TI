@@ -1,0 +1,14 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+
+    <form action="{% url 'new_topic' %}" method='post'>
+        <p>Adicione um novo tópico: </p>
+
+        {% csrf_token %} <!-- Essa tag em django é indispensável para formulários. Promove segurança -->
+        {{ form.as_p }}
+        <button name="submit">Adicionar</button>
+
+    </form>
+
+{% endblock content %}
