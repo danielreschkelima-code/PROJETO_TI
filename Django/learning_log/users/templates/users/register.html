@@ -1,0 +1,16 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+
+    {% if form.errors %}
+        <p>Seu login ou senha estão incorretos. Por favor, tente novamente</p>
+    {% endif %}
+
+    <form action="{% url 'register' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button name="submit">Registar</button>
+        <input type="hidden" name="next" value="{% url 'index' %}"/>
+    </form>
+
+{% endblock content %}
