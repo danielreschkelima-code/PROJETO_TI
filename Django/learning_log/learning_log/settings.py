@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'learning_logs',
     'users',
+    # APPS de TERCEIROS
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +122,8 @@ STATIC_URL = 'static/'
 
 # URL login page
 LOGIN_URL = '/users/login'
+
+# Bootstrap3
+BOOTSTRAP3 = {
+    'include_jquery': True,
+}
