@@ -18,7 +18,7 @@ int main() {
     float ponto_flutuante = 10.1;
     double ponto_flutuante64bit = 10.222222222222222222;
     // void vazio
-    wchar_t string = 'Tex';
+    string textos = "Tex";
 
     // MANIPULANDO ELAS
 
